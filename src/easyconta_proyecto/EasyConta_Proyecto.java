@@ -19,7 +19,9 @@ public class EasyConta_Proyecto {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner sc = new Scanner(System.in);
+        Principal Pantalla = new Principal();
+        Pantalla.setVisible(true);
+        /*Scanner sc = new Scanner(System.in);
         Empresa empresa = new Empresa();
         AsientosContables contables = new AsientosContables();
         boolean bReiniciar = true;
@@ -53,7 +55,7 @@ public class EasyConta_Proyecto {
                 System.out.println("Los valores son correctos?");
                 System.out.println("Introduzca 1 para si y 0 para No");
                 SiNo = sc.nextInt();
-                //Se queda en bucle
+//                Se queda en bucle
                 if (SiNo == 1) {
                     bReiniciar = false;
                 } else {
@@ -63,7 +65,7 @@ public class EasyConta_Proyecto {
             } catch (Exception e) {
                 System.out.println("Uyyy, algo a salido mal vuelvalo a intentar");
             }
-        } while (bReiniciar = true);
+        } while (bReiniciar = true);*/
     }
 
 }
