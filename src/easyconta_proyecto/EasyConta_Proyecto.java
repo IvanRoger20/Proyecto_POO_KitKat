@@ -19,7 +19,8 @@ public class EasyConta_Proyecto {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Principal Pantalla = new Principal();
+        PantallaInicio Pantalla = new PantallaInicio();
+        Pantalla.setResizable(false);
         Pantalla.setVisible(true);
         /*Scanner sc = new Scanner(System.in);
         Empresa empresa = new Empresa();

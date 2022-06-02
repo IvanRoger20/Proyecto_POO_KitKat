@@ -49,6 +49,9 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="txtCaja">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="40" y="140" width="150" height="-1"/>
@@ -66,6 +69,9 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="txtBanco">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="40" y="200" width="150" height="-1"/>
@@ -83,6 +89,9 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="txtMercancia">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
@@ -117,6 +126,10 @@
       </Constraints>
     </Component>
     <Component class="javax.swing.JTextField" name="txtProveedor">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="text" type="java.lang.String" value="0"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtProveedorActionPerformed"/>
       </Events>
@@ -130,6 +143,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Confirmar"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnConfirmarActionPerformed"/>
+      </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="30" y="300" width="160" height="50"/>

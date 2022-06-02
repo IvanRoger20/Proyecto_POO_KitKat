@@ -1,5 +1,10 @@
 package easyconta_proyecto;
 
+import java.awt.Color;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -29,7 +34,7 @@ public class PantallaInicio extends javax.swing.JFrame {
     private void initComponents() {
 
         BtnAceptarInicio = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
+        txtId = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -39,10 +44,19 @@ public class PantallaInicio extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         BtnAceptarInicio.setText("Aceptar");
+        BtnAceptarInicio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnAceptarInicioActionPerformed(evt);
+            }
+        });
         getContentPane().add(BtnAceptarInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(163, 283, 130, 50));
 
-        jTextField1.setText("Id....");
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 250, 160, -1));
+        txtId.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtIdActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 250, 160, -1));
 
         jLabel4.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(204, 204, 0));
@@ -57,10 +71,30 @@ public class PantallaInicio extends javax.swing.JFrame {
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/blue bg.jpg"))); // NOI18N
         jLabel3.setText("    ");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 460, 380));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -10, 510, 430));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void BtnAceptarInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnAceptarInicioActionPerformed
+        // TODO add your handling code here:
+        if(txtId.getText() != " "){
+        Principal principal = new Principal();
+        principal.setResizable(false);
+        principal.setVisible(true);
+        PantallaInicio Pantalla = new PantallaInicio();
+        Pantalla.setVisible(false);
+        dispose();
+        } else {
+            String message = "Porfavor introduzca una id valida\n";
+        JOptionPane.showMessageDialog(new JFrame(), message, "Error",
+        JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_BtnAceptarInicioActionPerformed
+
+    private void txtIdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIdActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtIdActionPerformed
 
     /**
      * @param args the command line arguments
@@ -103,6 +137,6 @@ public class PantallaInicio extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField txtId;
     // End of variables declaration//GEN-END:variables
 }

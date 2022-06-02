@@ -68,7 +68,7 @@ public class Asientos_Contables extends javax.swing.JFrame {
         jLabel3.setText("Abono");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(383, 30, 70, -1));
 
-        cbxAsientos1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione...", "Caja", "Banco", "Mercancia", "Proveedores", "Cliente", "" }));
+        cbxAsientos1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione...", "Caja", "Banco", "Mercancia", "Proveedores", "Cliente", "Mobiliario", "Documento", "Terreno", "Equipo de reparto", "Renta", "Edificio" }));
         cbxAsientos1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cbxAsientos1ActionPerformed(evt);
@@ -76,13 +76,13 @@ public class Asientos_Contables extends javax.swing.JFrame {
         });
         getContentPane().add(cbxAsientos1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 160, -1));
 
-        cbxAsientos2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione...", "Caja", "Banco", "Mercancia", "Proveedores", "Cliente", "" }));
+        cbxAsientos2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione...", "Caja", "Banco", "Mercancia", "Proveedores", "Cliente", "Mobiliario", "Documento", "Terreno", "Equipo de reparto", "Renta", "Edificio" }));
         getContentPane().add(cbxAsientos2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 160, -1));
 
-        cbxAsientos3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione...", "Caja", "Banco", "Mercancia", "Proveedores", "Cliente", "" }));
+        cbxAsientos3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione...", "Caja", "Banco", "Mercancia", "Proveedores", "Cliente", "Mobiliario", "Documento", "Terreno", "Equipo de reparto", "Renta", "Edificio" }));
         getContentPane().add(cbxAsientos3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 160, -1));
 
-        cbxAsientos4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione...", "Caja", "Banco", "Mercancia", "Proveedores", "Cliente", "" }));
+        cbxAsientos4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione...", "Caja", "Banco", "Mercancia", "Proveedores", "Cliente", "Mobiliario", "Documento", "Terreno", "Equipo de reparto", "Renta", "Edificio" }));
         getContentPane().add(cbxAsientos4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 160, -1));
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {

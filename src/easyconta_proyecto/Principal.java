@@ -54,14 +54,20 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel2.setText("Caja(Efectivo): ");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, -1, -1));
+
+        txtCaja.setText("0");
         getContentPane().add(txtCaja, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, 150, -1));
 
         jLabel3.setText("Banco: ");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 140, 20));
+
+        txtBanco.setText("0");
         getContentPane().add(txtBanco, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, 150, -1));
 
         jLabel4.setText("Mercancia(Costo de la mercancia que posee): ");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 230, -1));
+
+        txtMercancia.setText("0");
         getContentPane().add(txtMercancia, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, 150, -1));
 
         chbxDeber.setText("¿Le debe dinero a algun proveedor?");
@@ -75,6 +81,8 @@ public class Principal extends javax.swing.JFrame {
         jLabel5.setText("Saldo a deber a los proveedores");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 120, 180, -1));
 
+        txtProveedor.setEditable(false);
+        txtProveedor.setText("0");
         txtProveedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtProveedorActionPerformed(evt);
@@ -83,6 +91,11 @@ public class Principal extends javax.swing.JFrame {
         getContentPane().add(txtProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 150, 170, -1));
 
         btnConfirmar.setText("Confirmar");
+        btnConfirmar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnConfirmarActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnConfirmar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 160, 50));
 
         jLabel6.setText("     ");
@@ -108,11 +121,25 @@ public class Principal extends javax.swing.JFrame {
 
     private void chbxDeberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chbxDeberActionPerformed
         // TODO add your handling code here:
+        txtProveedor.setEditable(true);
     }//GEN-LAST:event_chbxDeberActionPerformed
 
     private void txtProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtProveedorActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtProveedorActionPerformed
+
+    private void btnConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfirmarActionPerformed
+        // TODO add your handling code here:
+        Asientos_Contables asientos = new Asientos_Contables();
+        CuentasT cuentast = new CuentasT();
+        asientos.setResizable(false);
+        asientos.setVisible(true);
+        cuentast.setResizable(false);
+        cuentast.setVisible(true);
+        Principal principal = new Principal();
+        principal.setVisible(false);
+        dispose();
+    }//GEN-LAST:event_btnConfirmarActionPerformed
 
     /**
      * @param args the command line arguments
